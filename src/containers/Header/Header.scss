@@ -1,0 +1,19 @@
+header {
+    position: fixed;
+    margin-left: 0.5ch;
+    .name {
+        position: absolute;
+        max-width: 15ch;
+        float: left;
+        margin: 0;
+        z-index: 100;
+        margin: 0.5ch;
+        cursor: pointer;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+
+        &.expanded {
+            width: 15ch;
+        }
+    }
+}
