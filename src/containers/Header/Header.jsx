@@ -15,24 +15,28 @@ export default class Header extends Component {
         }
     }
 
-    toggleIsMenuOpen = () => {
+    toggleIsMenuOpen = (openMenu) => {
         this.setState({
-            name: this.state.isMenuOpen ? FIRST_NAME[0] + SECOND_NAME[0] : `${FIRST_NAME} ${SECOND_NAME}`,
-            isMenuOpen: !this.state.isMenuOpen
+            name: openMenu ? `${FIRST_NAME} ${SECOND_NAME}` : FIRST_NAME[0] + SECOND_NAME[0],
+            isMenuOpen: openMenu
         });
     }
 
     render() {
         return (
-            <header>
+            <header
+                onPointerLeave={() => this.toggleIsMenuOpen(false)}
+            >
                 <p
                     className='name'
-                    onClick={this.toggleIsMenuOpen}>
+                    onPointerEnter={() => this.toggleIsMenuOpen(true)}
+                >
                     {this.state.name}
                 </p>
                 {this.state.isMenuOpen
                     ? <NavMenu
-                        onDismiss={this.toggleIsMenuOpen} />
+                    // onDismiss={this.toggleIsMenuOpen(false)}
+                    />
                     : ''}
             </header>
         )

@@ -1,6 +1,7 @@
 header {
     position: fixed;
     margin-left: 0.5ch;
+        font-family: 'Courier New', Courier, monospace;
     .name {
         position: absolute;
         max-width: 15ch;
@@ -9,7 +10,6 @@ header {
         z-index: 100;
         margin: 0.5ch;
         cursor: pointer;
-        font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
 
         &.expanded {

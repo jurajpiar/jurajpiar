@@ -30,8 +30,8 @@ function Main() {
     <main>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={Education} />
-        <Route path="/topics" component={Career} />
+        <Route path="/education" component={Education} />
+        <Route path="/career" component={Career} />
       </Switch>
     </main>
   )
