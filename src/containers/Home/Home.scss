@@ -1,3 +1,43 @@
-// .title {
-//     margin: 0px;
-// }
+.wrapper {
+  &:hover .title {
+    // top: 0;
+    offset-position: -900px;
+  }
+  &:hover .expanded {
+    // display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  .title {
+    // position: absolute;
+    // top: 50%;
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+    padding: 0.1em;
+
+    + .subtitle {
+      margin: 0;
+      padding: 0.1em;
+      font-style: italic;
+      font-size: 110%;
+    }
+  }
+  .expanded {
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+    padding: 3em;
+    padding-top: 0;
+    border: 1px dotted rgba(128, 128, 128, 0.096);
+    border-top: none;
+    border-radius: 5em;
+    // -webkit-transition: all 2s ease-out;
+    // -moz-transition: all 2s ease-out;
+    // -ms-transition: all 2s ease-out;
+    // -o-transition: all 2s ease-out;
+    // transition: all 2s ease-out;
+
+    transition: visibility 0s, opacity 0.9s linear;
+  }
+}
