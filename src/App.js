@@ -6,7 +6,7 @@ import Header from './containers/Header/Header';
 import './App.css';
 import Home from './containers/Home/Home';
 import Education from './containers/Education/Education';
-import Career from './containers/Education/Education';
+import Career from './containers/Career/Career';
 
 class App extends Component {
   state = {

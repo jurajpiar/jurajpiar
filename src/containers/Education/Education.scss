@@ -1,39 +1,6 @@
 .education {
-    // background: bisque;
-    .educationContent {
-        width: 100%;
-        .contentList {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .contentItem {
-            display: flex;
-            // justify-content: space-between;
-            padding: 10ch;
-            flex-flow: row;
-            
-            .itemBody {
-                width: 60%;
-                text-align: start;
-                // background: beige;
-                // flex: 10;
-            }
-
-            .itemHeader {
-                text-align: end;
-                width: 30%;
-                // background: blue;
-                // flex: 5;
-                // display: flex;
-                // justify-content: flex-end;
-            }
-            .itemDate {
-                width: 10%;
-                text-align: end;
-                // background: bisque;
-                // flex: 2;
-            }
-        }
-    }
+  // background: bisque;
+  .educationContent {
+    width: 100%;
+  }
 }

@@ -1,0 +1,12 @@
+.ContentItem {
+  display: flex;
+  // justify-content: space-between;
+  padding: 10ch;
+  padding-top: 1ch;
+  padding-bottom: 2ch;
+  flex-flow: row wrap;
+
+  > * {
+    float: 1 100%;
+  }
+}
