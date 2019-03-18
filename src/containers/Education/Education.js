@@ -16,9 +16,8 @@ export default class Education extends Component {
                 <div className='educationContent'>
                     <h1 >Education</h1>
                     <ContentList>
-                        <ContentItem>
+                        <ContentItem title='Univestity of the West of England<'>
                             <ContentItemHeader>
-                                <p>Univestity of the West of England</p>
                                 <p>Computer Science</p>
                             </ContentItemHeader>
                             <ContentItemDate>
@@ -34,9 +33,8 @@ export default class Education extends Component {
                             </ContentItemBody>
                         </ContentItem>
 
-                        <ContentItem>
+                        <ContentItem title='Cornwall Collage'>
                             <ContentItemHeader>
-                                <p>Cornwall Collage</p>
                                 <p>Computing</p>
                             </ContentItemHeader>
                             <ContentItemDate>
