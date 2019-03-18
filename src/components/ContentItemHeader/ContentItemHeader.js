@@ -5,7 +5,7 @@ import './ContentItemHeader.scss';
 
 const ContentItemHeader = props => {
     return (
-        <div className={`ContentItemHeader ${props.className}`}>
+        <div className={`ContentItemHeader ${props.className || ''}`}>
             <div>
                 {props.children}
             </div>

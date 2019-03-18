@@ -5,7 +5,7 @@ import './ContentList.scss';
 
 const ContentList = props => {
     return (
-        <ul className={`ContentList ${props.className}`}>
+        <ul className={`ContentList ${props.className || ''}`}>
             {props.children}
         </ul>
     )

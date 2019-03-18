@@ -5,7 +5,7 @@ import './ContentItemDate.scss';
 
 const ContentItemDate = props => {
     return (
-        <div className={`ContentItemDate ${props.className}`}>
+        <div className={`ContentItemDate ${props.className || ''}`}>
             <div>
                 {props.children}
             </div>

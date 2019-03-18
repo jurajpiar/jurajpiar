@@ -26,6 +26,9 @@ export default class NavMenu extends Component {
                         <li>
                             <Link to="/career">Career</Link>
                         </li>
+                        <li>
+                            <Link to="/skills">Skills</Link>
+                        </li>
                     </ul>
                 </div>
             </>

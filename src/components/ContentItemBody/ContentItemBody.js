@@ -5,7 +5,7 @@ import './ContentItemBody.scss';
 
 const ContentItemBody = props => {
     return (
-        <div className={`ContentItemBody ${props.className}`}>
+        <div className={`ContentItemBody ${props.className || ''}`}>
             <div>
                 {props.children}
             </div>

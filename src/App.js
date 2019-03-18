@@ -7,6 +7,7 @@ import './App.css';
 import Home from './containers/Home/Home';
 import Education from './containers/Education/Education';
 import Career from './containers/Career/Career';
+import Skills from './containers/Skills/Skills';
 
 class App extends Component {
   state = {
@@ -32,6 +33,7 @@ function Main() {
         <Route exact path="/" component={Home} />
         <Route path="/education" component={Education} />
         <Route path="/career" component={Career} />
+        <Route path="/skills" component={Skills} />
       </Switch>
     </main>
   )

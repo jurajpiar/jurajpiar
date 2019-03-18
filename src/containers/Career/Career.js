@@ -3,9 +3,9 @@ import PageCareer from './components/PageCareer/PageCareer';
 import './Career.scss';
 import ContentList from '../../components/ContentList/ContentList';
 import ContentItem from '../../components/ContentItem/ContentItem';
-import ContentItemHeader from '../../components/ContentItemHeader/ContentItemHeader';
 import ContentItemDate from '../../components/ContentItemDate/ContentItemDate';
 import ContentItemBody from '../../components/ContentItemBody/ContentItemBody';
+import CareerItemHeader from './components/CareerItemHeader/CareerItemHeader';
 
 export default class Career extends Component {
 
@@ -15,10 +15,11 @@ export default class Career extends Component {
                 <div className='educationContent'>
                     <h1 >Career</h1>
                     <ContentList>
-                        <ContentItem title='Buzz Interactive Ltd.'>
-                            <ContentItemHeader>
-                                <p>Software Developer</p>
-                            </ContentItemHeader>
+                        <ContentItem>
+                            <CareerItemHeader
+                                companyName='Buzz Interactive Ltd.'
+                                jobTitle='Software Developer'
+                            />
                             <ContentItemDate>
                                 <p>2018-Present (10mo)</p>
                                 <p className='faint'>Newquay, UK</p>
@@ -30,10 +31,11 @@ export default class Career extends Component {
                             </ContentItemBody>
                         </ContentItem>
 
-                        <ContentItem title='European Organisation for Nuclear Research (CERN)'>
-                            <ContentItemHeader>
-                                <p>Software Developer (Technical Student)</p>
-                            </ContentItemHeader>
+                        <ContentItem >
+                            <CareerItemHeader
+                                companyName='European Organisation for Nuclear Research (CERN)'
+                                jobTitle='Software Developer (Technical Student)'
+                            />
                             <ContentItemDate>
                                 <p>2016-2017 (12mo)</p>
                                 <p className='faint'>Geneva, CH</p>
@@ -42,7 +44,7 @@ export default class Career extends Component {
                                 <p><b>360° Panorama</b></p>
                                 <ul>
                                     <li>
-                                        Prototype and implementation of a virtual tour of the accelerator tunnels using JavaEE with Spring framework and JavaScript (ES6, Three.js, WebPack) to reduce radiation exposure
+                                        Prototype and implementation of a virtual tour of the accelerator tunnels using JavaEE8 with Spring framework and JavaScript (ES6, Three.js, WebPack) to reduce radiation exposure
                                     </li>
                                     <li>
                                         Communication of requirements from a number of stakeholders (groups, sections and teams within CERN)
@@ -72,17 +74,48 @@ Applications (VBA)
                                 </ul>
                             </ContentItemBody>
                         </ContentItem>
-
-                        <ContentItem title='Arkevista Ltd.'>
-                            <ContentItemHeader>
-                                <p>Software Engineer Consultant</p>
-                            </ContentItemHeader>
+                        <ContentItem className='grouped'>
+                            <CareerItemHeader
+                                companyName='Arkevista Ltd.'
+                                jobTitle='Software Engineer (Consultant)'
+                            />
                             <ContentItemDate>
-                                <p>2017-2018</p>
-                                <p className='faint'>Geneva, CH</p>
+                                <p>2017-2018 (9mo)</p>
+                                <p className='faint'>Bristol, UK</p>
                             </ContentItemDate>
                             <ContentItemBody>
-                                <p>Providing ad-hoc software support and core system maintenance. Both Java and Python.</p>
+                                <p>Providing ad-hoc software support and core system maintenance (JavaSE8 and Python)</p>
+                            </ContentItemBody>
+                        </ContentItem>
+                        <ContentItem className='grouped'>
+                            <CareerItemHeader
+                                companyName=''
+                                jobTitle='Software Engineer (Contractor)'
+                            />
+                            <ContentItemDate>
+                                <p>2015-2016 (10mo)</p>
+                            </ContentItemDate>
+                            <ContentItemBody>
+                                <p>Further development and maintenance of the core software system</p>
+                                <p>Supporting the analysts with other ad­hoc requirements</p>
+                            </ContentItemBody>
+                        </ContentItem>
+                        <ContentItem className='grouped'>
+                            <CareerItemHeader
+                                companyName=''
+                                jobTitle='Software Engineer (Summer Intern)'
+                            />
+                            <ContentItemDate>
+                                <p>2015-2015 (4mo)</p>
+                            </ContentItemDate>
+                            <ContentItemBody>
+                                <p><b>Arki</b></p>
+                                <ul>
+                                    <li>Co-created the core software solution in JavaSE with one other intern</li>
+                                    <li>Heavily involved in defining the specifications for the core system</li>
+                                    <li>Created plugins for a geographical information system for viewing, categorising and tagging shipping data in Python</li>
+                                </ul>
+                                <p>Supported the analysts with other ad­hoc requirements (mainly Python)</p>
                             </ContentItemBody>
                         </ContentItem>
                     </ContentList>

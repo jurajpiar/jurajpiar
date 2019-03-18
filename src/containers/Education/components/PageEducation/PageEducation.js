@@ -5,7 +5,7 @@ import Page from '../../../../components/Page/Page';
 const PageEducation = (props) => {
     return (
         <Page
-            center={`centerX ${props.className}`}>
+            center={`centerX ${props.className || ''}`}>
             {props.children}
         </Page>
     )
