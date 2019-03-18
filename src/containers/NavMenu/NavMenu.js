@@ -14,9 +14,11 @@ export default class NavMenu extends Component {
             <>
                 <div className='blur' />
                 <div className='nav-list'>
-                    <ul>
+                    <ul onMouseOver={event => {
+                        event.target.click();
+                    }}>
                         <li>
-                            <Link to="/">Me</Link>
+                            <Link to="/" >Me</Link>
                         </li>
                         <li>
                             <Link to="/education">Education</Link>
