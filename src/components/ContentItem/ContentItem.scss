@@ -4,9 +4,17 @@
   padding: 10ch;
   padding-top: 1ch;
   padding-bottom: 2ch;
-  flex-flow: row wrap;
+  flex-flow: column;
 
-  > * {
-    float: 1 100%;
+  .ContentItemTitle {
+    margin: 0;
+  }
+  .ContentItemContent {
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    > * {
+      float: 1 100%;
+    }
   }
 }
