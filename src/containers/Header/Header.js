@@ -25,11 +25,11 @@ export default class Header extends Component {
     render() {
         return (
             <header
-                onPointerLeave={() => this.toggleIsMenuOpen(false)}
+                onMouseLeave={() => this.toggleIsMenuOpen(false)}
             >
                 <p
                     className='name'
-                    onPointerEnter={() => this.toggleIsMenuOpen(true)}
+                    onMouseEnter={() => this.toggleIsMenuOpen(true)}
                 >
                     {this.state.name}
                 </p>
