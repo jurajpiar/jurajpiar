@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import './ContentItemDate.scss';
+import './ContentItemInfo.scss';
 
-const ContentItemDate = props => {
+const ContentItemInfo = props => {
     return (
-        <div className={`ContentItemDate ${props.className || ''}`}>
+        <div className={`ContentItemInfo ${props.className || ''}`}>
             <div>
                 {props.children}
             </div>
@@ -13,8 +13,8 @@ const ContentItemDate = props => {
     )
 }
 
-ContentItemDate.propTypes = {
+ContentItemInfo.propTypes = {
     className: PropTypes.string,
 }
 
-export default ContentItemDate
+export default ContentItemInfo

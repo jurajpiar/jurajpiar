@@ -3,9 +3,9 @@ import PageCareer from './components/PageCareer/PageCareer';
 import './Career.scss';
 import ContentList from '../../components/ContentList/ContentList';
 import ContentItem from '../../components/ContentItem/ContentItem';
-import ContentItemDate from '../../components/ContentItemDate/ContentItemDate';
 import ContentItemBody from '../../components/ContentItemBody/ContentItemBody';
 import CareerItemHeader from './components/CareerItemHeader/CareerItemHeader';
+import CareerItemInfo from './components/CareerItemInfo/CareerItemInfo';
 
 export default class Career extends Component {
 
@@ -20,10 +20,10 @@ export default class Career extends Component {
                                 companyName='Buzz Interactive Ltd.'
                                 jobTitle='Software Developer'
                             />
-                            <ContentItemDate>
-                                <p>2018-Present (10mo)</p>
-                                <p className='faint'>Newquay, UK</p>
-                            </ContentItemDate>
+                            <CareerItemInfo
+                                location='Newquay, UK'
+                                date='2018-Present (10mo)'
+                            />
                             <ContentItemBody>
                                 <p><b>Ménière’s monitor</b> - c#.net Xamarin project extending existing iOS and droid app as well as orchardCMS-based web app.</p>
                                 <p><b>Ripostr</b> - Ionic4 Angular7 iOS/droid app written from scratch in Typescript</p>
@@ -36,10 +36,10 @@ export default class Career extends Component {
                                 companyName='European Organisation for Nuclear Research (CERN)'
                                 jobTitle='Software Developer (Technical Student)'
                             />
-                            <ContentItemDate>
-                                <p>2016-2017 (12mo)</p>
-                                <p className='faint'>Geneva, CH</p>
-                            </ContentItemDate>
+                            <CareerItemInfo
+                                location='Geneva, CH'
+                                date='2016-2017 (12mo)'
+                            />
                             <ContentItemBody>
                                 <p><b>360° Panorama</b></p>
                                 <ul>
@@ -79,10 +79,10 @@ Applications (VBA)
                                 companyName='Arkevista Ltd.'
                                 jobTitle='Software Engineer (Consultant)'
                             />
-                            <ContentItemDate>
-                                <p>2017-2018 (9mo)</p>
-                                <p className='faint'>Bristol, UK</p>
-                            </ContentItemDate>
+                            <CareerItemInfo
+                                location='Bristol, UK'
+                                date='2017-2018 (9mo)'
+                            />
                             <ContentItemBody>
                                 <p>Providing ad-hoc software support and core system maintenance (JavaSE8 and Python)</p>
                             </ContentItemBody>
@@ -92,9 +92,9 @@ Applications (VBA)
                                 companyName=''
                                 jobTitle='Software Engineer (Contractor)'
                             />
-                            <ContentItemDate>
-                                <p>2015-2016 (10mo)</p>
-                            </ContentItemDate>
+                            <CareerItemInfo
+                                date='2015-2016 (10mo)'
+                            />
                             <ContentItemBody>
                                 <p>Further development and maintenance of the core software system</p>
                                 <p>Supporting the analysts with other ad­hoc requirements</p>
@@ -105,9 +105,9 @@ Applications (VBA)
                                 companyName=''
                                 jobTitle='Software Engineer (Summer Intern)'
                             />
-                            <ContentItemDate>
-                                <p>2015-2015 (4mo)</p>
-                            </ContentItemDate>
+                            <CareerItemInfo
+                                date='2015-2015 (4mo)'
+                            />
                             <ContentItemBody>
                                 <p><b>Arki</b></p>
                                 <ul>

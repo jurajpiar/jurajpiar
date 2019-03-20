@@ -4,9 +4,9 @@ import PageEducation from './components/PageEducation/PageEducation';
 import './Education.scss';
 import ContentList from '../../components/ContentList/ContentList';
 import ContentItem from '../../components/ContentItem/ContentItem';
-import ContentItemHeader from '../../components/ContentItemHeader/ContentItemHeader';
-import ContentItemDate from '../../components/ContentItemDate/ContentItemDate';
 import ContentItemBody from '../../components/ContentItemBody/ContentItemBody';
+import EducationItemHeader from './components/EducationItemHeader/EducationItemHeader';
+import EducationItemInfo from './components/EducationItemInfo/EducationItemInfo';
 
 export default class Education extends Component {
 
@@ -16,13 +16,14 @@ export default class Education extends Component {
                 <div className='educationContent'>
                     <h1 >Education</h1>
                     <ContentList>
-                        <ContentItem title='Univestity of the West of England<'>
-                            <ContentItemHeader>
-                                <p>Computer Science</p>
-                            </ContentItemHeader>
-                            <ContentItemDate>
-                                <p>2014-2018</p>
-                            </ContentItemDate>
+                        <ContentItem>
+                            <EducationItemHeader
+                                organisation='Univestity of the West of England'
+                                programme='Computer Science' />
+                            <EducationItemInfo
+                                location='Bristol, UK'
+                                date='2014-2018'
+                            />
                             <ContentItemBody>
                                 <p>A 3+1 year programme with a focus on Artificial Intelligence and Enterprise Systems Development.</p>
                                 <b>Awards:</b>
@@ -33,13 +34,14 @@ export default class Education extends Component {
                             </ContentItemBody>
                         </ContentItem>
 
-                        <ContentItem title='Cornwall Collage'>
-                            <ContentItemHeader>
-                                <p>Computing</p>
-                            </ContentItemHeader>
-                            <ContentItemDate>
-                                <p>2013-2014</p>
-                            </ContentItemDate>
+                        <ContentItem>
+                            <EducationItemHeader
+                                organisation='Cornwall Collage'
+                                programme='Computing' />
+                            <EducationItemInfo
+                                location='Saltash, UK'
+                                date='2013-2014'
+                            />
                             <ContentItemBody>
                                 <p>Access to Higher Education Diploma</p>
                             </ContentItemBody>
