@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import NavMenu from '../NavMenu/NavMenu';
 
 import './Header.scss';
+
+import NavMenu from '../NavMenu/NavMenu';
 
 const FIRST_NAME = 'Juraj';
 const SECOND_NAME = 'Piar';
@@ -29,20 +30,16 @@ export default class Header extends Component {
     render() {
         return (
             <header
-            // onMouseLeave={() => this.toggleIsMenuOpen(false)}
+                onMouseLeave={() => this.toggleIsMenuOpen(false)}
             >
-                <p
-                    className='name'
-                    // onMouseEnter={() => this.toggleIsMenuOpen(true)}
-                    onClick={() => this.toggleIsMenuOpen()}
-                >
-                    {this.state.name}
-                </p>
-                {this.state.isMenuOpen
-                    ? <NavMenu
-                    // onDismiss={this.toggleIsMenuOpen(false)}
-                    />
-                    : ''}
+                {
+                    this.state.isMenuOpen
+                        ? <NavMenu />
+                        : <p className='name'
+                            onClick={() => this.toggleIsMenuOpen()}>
+                            {this.state.name}
+                        </p>
+                }
             </header>
         )
     }

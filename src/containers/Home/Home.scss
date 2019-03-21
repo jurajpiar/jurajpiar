@@ -8,20 +8,28 @@
     visibility: visible;
     opacity: 1;
   }
+
   .title {
-    // position: absolute;
-    // top: 50%;
     font-size: 3em;
     line-height: 1em;
     margin: 0;
     padding: 0.1em;
 
-    + .subtitle {
-      margin: 0;
-      padding: 0.1em;
-      font-style: italic;
-      font-size: 110%;
+    path {
+      fill: #000;
+      fill-opacity: 1;
+      stroke: #000;
+      stroke-width: 0.1;
+      stroke-dasharray: 870;
+      stroke-dashoffset: 870;
+      animation: draw 15s linear;
     }
+  }
+  + .subtitle {
+    margin: 0;
+    padding: 0.1em;
+    font-style: italic;
+    font-size: 110%;
   }
   .expanded {
     // display: none;
@@ -32,12 +40,30 @@
     border: 1px dotted rgba(128, 128, 128, 0.096);
     border-top: none;
     border-radius: 5em;
-    // -webkit-transition: all 2s ease-out;
-    // -moz-transition: all 2s ease-out;
-    // -ms-transition: all 2s ease-out;
-    // -o-transition: all 2s ease-out;
-    // transition: all 2s ease-out;
-
     transition: visibility 0s, opacity 0.9s linear;
   }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+  0% {
+    fill: #fff;
+    fill-opacity: 0;
+  }
+  3% {
+    fill: url(#blackGrad1);
+  }
+  10% {
+    fill-opacity: 0;
+  }
+  20% {
+    fill: #000;
+    fill-opacity: 1;
+  }
+}
+
+svg:not(:root) {
+  display: inline-block;
 }

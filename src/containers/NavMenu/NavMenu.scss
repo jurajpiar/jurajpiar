@@ -1,44 +1,44 @@
-@mixin blur( $px: 0 ) {
+@mixin blur($px: 0) {
   -webkit-filter: blur(#{$px}px);
-  -o-filter: blur(#{$px}px);  
-  -moz-filter: blur(#{$px}px);  
+  -o-filter: blur(#{$px}px);
+  -moz-filter: blur(#{$px}px);
   -ms-filter: blur(#{$px}px);
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'blur\'><feGaussianBlur stdDeviation=\'#{$px}\' /></filter></svg>#blur");
-  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$px}');
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='blur'><feGaussianBlur stdDeviation='#{$px}' /></filter></svg>#blur");
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$px}');
 }
 .Nav {
-    position: relative;
-    padding-top: 2ch;
-    margin-left: 0.5ch;
-    width: 15ch;
-    text-align: left;
-    // left: 50%;
-    background-color:  rgba($color: #ffffff, $alpha: 0.5);
-    border-radius: 1ch;
-    // .blur {
-    //     position: absolute;
-    //     height: 100%;
-    //     width: 100%;
-    //     background-color:  rgba($color: #ffffff, $alpha: 0.6);
-    //     z-index: 99;
-    //     @include blur(5)
-    // }
-    .nav-list {
-        z-index: 100;
-        background-color: rgba($color: #000000, $alpha: 0.0);
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            li {
-                background-color: rgba($color: #e0f3d1, $alpha: 0.0);
+  position: relative;
+  padding-top: 2.4ch;
+  margin-left: 0.5ch;
+  width: 15ch;
+  text-align: left;
+  // left: 50%;
+  background-color: rgba($color: #ffffff, $alpha: 0.5);
+  border-radius: 1ch;
+  // .blur {
+  //     position: absolute;
+  //     height: 100%;
+  //     width: 100%;
+  //     background-color:  rgba($color: #ffffff, $alpha: 0.6);
+  //     z-index: 99;
+  //     @include blur(5)
+  // }
+  .nav-list {
+    z-index: 100;
+    background-color: rgba($color: #000000, $alpha: 0);
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        background-color: rgba($color: #e0f3d1, $alpha: 0);
 
-                a {
-                    text-decoration: none;
-                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    color: #000000;
-                }
-            }
+        a {
+          text-decoration: none;
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+          color: #000000;
         }
+      }
     }
+  }
 }
