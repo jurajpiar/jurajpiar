@@ -1,19 +1,18 @@
 header {
-    position: fixed;
-    margin-left: 0.5ch;
-        font-family: 'Courier New', Courier, monospace;
-    .name {
-        position: absolute;
-        max-width: 15ch;
-        float: left;
-        margin: 0;
-        z-index: 100;
-        margin: 0.5ch;
-        cursor: pointer;
-        font-weight: bold;
+  position: fixed;
+  margin-left: 0.5ch;
+  .name {
+    position: absolute;
+    max-width: 15ch;
+    float: left;
+    margin: 0;
+    z-index: 100;
+    margin: 0.5ch;
+    cursor: pointer;
+    font-weight: bold;
 
-        &.expanded {
-            width: 15ch;
-        }
+    &.expanded {
+      width: 15ch;
     }
+  }
 }
