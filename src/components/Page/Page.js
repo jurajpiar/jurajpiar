@@ -5,13 +5,14 @@ import './Page.scss';
 
 export default class Page extends Component {
     static propTypes = {
-        center: PropTypes.string
+        center: PropTypes.string,
+        className: PropTypes.string,
     }
 
     render() {
         return (
             <div
-                className={`page ${this.props.center}`}>
+                className={`page ${this.props.className} ${this.props.center}`}>
                 {this.props.children}
             </div>
         )
