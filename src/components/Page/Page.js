@@ -12,7 +12,7 @@ export default class Page extends Component {
     render() {
         return (
             <div
-                className={`page ${this.props.className} ${this.props.center}`}>
+                className={`page ${this.props.className || ''} ${this.props.center}`}>
                 {this.props.children}
             </div>
         )
