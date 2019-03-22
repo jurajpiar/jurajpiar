@@ -1,11 +1,18 @@
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("./assets/fonts/roboto-slab/RobotoSlab-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: roboto-slab, serif;
+  font-family: RobotoSlab, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: roboto-slab, serif;
+  font-family: RobotoSlab, sans-serif;
 }
