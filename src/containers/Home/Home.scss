@@ -51,7 +51,7 @@
   0% {
     fill: #fff;
     fill-opacity: 0;
-    stroke: #fff;
+    // stroke: #fff;
   }
   3% {
     fill: url(#blackGrad1);
@@ -62,12 +62,12 @@
   20% {
     fill: #000;
     fill-opacity: 1;
-    stroke: #000;
+    // stroke: #000;
   }
 }
 
 .HomePage {
-  animation: chbac 12s linear;
+  // animation: chbac 12s linear;
 }
 
 @keyframes chbac {
