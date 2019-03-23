@@ -18,7 +18,7 @@ export default class Education extends Component {
                     <ContentList>
                         <ContentItem>
                             <EducationItemHeader
-                                organisation='Univestity of the West of England'
+                                organisation='University of the West of England'
                                 programme='Computer Science' />
                             <EducationItemInfo
                                 location='Bristol, UK'
