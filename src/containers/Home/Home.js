@@ -32,6 +32,7 @@ export default class Me extends Component {
                     className='wrapper'
                     onMouseEnter={() => this.setState({ isExpanded: true })}
                     onMouseLeave={() => this.setState({ isExpanded: false })}
+                    onTouchEnd={() => this.setState({ isExpanded: !this.state.isExpanded })}
                 >
                     <h1 className='title'>
                         <svg
