@@ -7,7 +7,7 @@ export default class Me extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isExpanded: false
+            isExpanded: false,
         }
     }
 
@@ -30,9 +30,9 @@ export default class Me extends Component {
             <HomePage>
                 <div
                     className='wrapper'
-                    onMouseEnter={() => this.setState({ isExpanded: true })}
-                    onMouseLeave={() => this.setState({ isExpanded: false })}
-                    onTouchEnd={() => this.setState({ isExpanded: !this.state.isExpanded })}
+                    onMouseEnter={() => this.toggleExpanded(true)}
+                    onMouseLeave={() => this.toggleExpanded(false)}
+                    onTouch={() => this.toggleExpanded()}
                 >
                     <h1 className='title'>
                         <svg
@@ -63,5 +63,10 @@ export default class Me extends Component {
                 </div>
             </HomePage>
         )
+    }
+
+    toggleExpanded = (isExpanded) => {
+        if (isExpanded) this.setState({ isExpanded });
+        else this.setState({ isExpanded: !this.state.isExpanded });
     }
 }

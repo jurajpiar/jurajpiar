@@ -42,7 +42,7 @@ export default class Career extends Component {
                             />
                             <ContentItemBody>
                                 <p><b>360° Panorama</b></p>
-                                <ul>
+                                <ul className='contentItemBodyList'>
                                     <li>
                                         Prototype and implementation of a virtual tour of the accelerator tunnels using JavaEE8 with Spring framework and JavaScript (ES6, Three.js, WebPack) to reduce radiation exposure
                                     </li>
@@ -60,7 +60,7 @@ export default class Career extends Component {
                                     </li>
                                 </ul>
                                 <p><b>Layout Drawings</b></p>
-                                <ul>
+                                <ul className='contentItemBodyList'>
                                     <li>
                                         A Prototype of a web application for viewing of the LHC layout drawings
                                     </li>
@@ -110,7 +110,7 @@ Applications (VBA)
                             />
                             <ContentItemBody>
                                 <p><b>Arki</b></p>
-                                <ul>
+                                <ul className='contentItemBodyList'>
                                     <li>Co-created the core software solution in JavaSE with one other intern</li>
                                     <li>Heavily involved in defining the specifications for the core system</li>
                                     <li>Created plugins for a geographical information system for viewing, categorising and tagging shipping data in Python</li>
