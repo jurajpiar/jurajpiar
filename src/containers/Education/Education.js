@@ -36,7 +36,7 @@ export default class Education extends Component {
 
                         <ContentItem>
                             <EducationItemHeader
-                                organisation='Cornwall Collage'
+                                organisation='Cornwall College'
                                 programme='Computing' />
                             <EducationItemInfo
                                 location='Saltash, UK'
