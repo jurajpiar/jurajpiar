@@ -1,7 +1,7 @@
 .wrapper {
   &:hover .title {
     // top: 0;
-    offset-position: -900px;
+    // offset-position: -900px;
   }
   &:hover .expanded {
     // display: block;
@@ -32,7 +32,7 @@
     font-size: 110%;
   }
   .expanded {
-    // display: none;
+    max-height: 70vh;
     visibility: hidden;
     opacity: 0;
     padding: 3em;
@@ -51,24 +51,25 @@
   0% {
     fill: #fff;
     fill-opacity: 0;
-    // stroke: #fff;
+    stroke: rgb(0, 92, 20);
   }
   3% {
     fill: url(#blackGrad1);
   }
   10% {
     fill-opacity: 0;
+    stroke: rgb(92, 0, 0);
   }
   20% {
     fill: #000;
     fill-opacity: 1;
-    // stroke: #000;
+    stroke: rgb(116, 0, 0);
   }
 }
 
-.HomePage {
-  // animation: chbac 12s linear;
-}
+// .HomePage {
+//   animation: chbac 12s linear;
+// }
 
 @keyframes chbac {
   0% {

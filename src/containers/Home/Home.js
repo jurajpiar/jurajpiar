@@ -32,7 +32,7 @@ export default class Me extends Component {
                     className='wrapper'
                     onMouseEnter={() => this.toggleExpanded(true)}
                     onMouseLeave={() => this.toggleExpanded(false)}
-                    onTouch={() => this.toggleExpanded()}
+                    onClick={() => this.toggleExpanded()}
                 >
                     <h1 className='title'>
                         <svg
