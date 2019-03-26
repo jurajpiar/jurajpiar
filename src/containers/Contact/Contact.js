@@ -22,26 +22,24 @@ export class Contact extends Component {
                             <ContentItemInfo>
                                 <FontAwesomeIcon icon='envelope' />
                             </ContentItemInfo>
-                            <ContentItemBody>
-                                juraj.piar@icloud.com
+                            <ContentItemBody>juraj.piar@icloud.com
                             </ContentItemBody>
                         </ContentItem>
                     </a>
-                    <a href="https://www.linkedin.com/in/juraj-p-00833412">
+                    <a href="https://www.linkedin.com/in/juraj-p-00833412" target="_blank" rel="noopener noreferrer" >
                         <ContentItem>
                             <ContentItemInfo>
                                 <FontAwesomeIcon icon={['fab', 'linkedin']} />
                             </ContentItemInfo>
-                            <ContentItemBody>https://www.linkedin.com/in/juraj-p-00833412</ContentItemBody>
+                            <ContentItemBody>juraj-p-00833412</ContentItemBody>
                         </ContentItem>
                     </a>
-                    <a href="https://github.com/jurajpiar/jurajpiar">
+                    <a href="https://github.com/jurajpiar/jurajpiar" target="_blank" rel="noopener noreferrer" >
                         <ContentItem>
                             <ContentItemInfo>
                                 <FontAwesomeIcon icon={['fab', 'github']} />
                             </ContentItemInfo>
-                            <ContentItemBody>
-                                https://github.com/jurajpiar/jurajpiar
+                            <ContentItemBody>github.com/jurajpiar/jurajpiar
                             </ContentItemBody>
                         </ContentItem>
                     </a>
