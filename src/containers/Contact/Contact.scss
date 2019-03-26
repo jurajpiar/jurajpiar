@@ -1,0 +1,11 @@
+.ContentItemBody {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+    text-decoration-color: rgba(220, 20, 60, 0.459);
+  }
+}
