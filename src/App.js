@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
-
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Header from './containers/Header/Header';
 
 import './App.css';
@@ -11,6 +13,11 @@ import {
   Skills,
   Contact
 } from './containers';
+
+library.add(
+  fab,
+  faEnvelope,
+);
 
 class App extends Component {
   state = {

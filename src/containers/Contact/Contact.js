@@ -4,33 +4,47 @@ import ContentItem from '../../components/ContentItem/ContentItem';
 import ContentList from '../../components/ContentList/ContentList';
 import ContentItemInfo from '../../components/ContentItemInfo/ContentItemInfo';
 import ContentItemBody from '../../components/ContentItemBody/ContentItemBody';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './Contact.scss';
+import ContentItemHeader from '../../components/ContentItemHeader/ContentItemHeader';
 
 
 
 export class Contact extends Component {
     render() {
         return (
-            <ContactPage className='ContactPage'>
+            <ContactPage>
                 <h1 >Contact</h1>
-                <ContentList className='ContactList'>
-                    <ContentItem className='ContactListItem'>
-                        <ContentItemInfo>
-                            Email:
-                        </ContentItemInfo>
-                        <ContentItemBody>
-                            <a href="mailto:juraj.piar@icloud.com">juraj.piar@icloud.com</a>
-                        </ContentItemBody>
-                    </ContentItem>
-                    <ContentItem>
-                        <ContentItemInfo>
-                            This:
-                        </ContentItemInfo>
-                        <ContentItemBody>
-                            <a href="https://github.com/jurajpiar/jurajpiar">https://github.com/jurajpiar/jurajpiar</a>
-                        </ContentItemBody>
-                    </ContentItem>
+                <ContentList>
+                    <a href="mailto:juraj.piar@icloud.com">
+                        <ContentItem className='ContactListItem'>
+                            <ContentItemInfo>
+                                <FontAwesomeIcon icon='envelope' />
+                            </ContentItemInfo>
+                            <ContentItemBody>
+                                juraj.piar@icloud.com
+                            </ContentItemBody>
+                        </ContentItem>
+                    </a>
+                    <a href="https://www.linkedin.com/in/juraj-p-00833412">
+                        <ContentItem>
+                            <ContentItemInfo>
+                                <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                            </ContentItemInfo>
+                            <ContentItemBody>https://www.linkedin.com/in/juraj-p-00833412</ContentItemBody>
+                        </ContentItem>
+                    </a>
+                    <a href="https://github.com/jurajpiar/jurajpiar">
+                        <ContentItem>
+                            <ContentItemInfo>
+                                <FontAwesomeIcon icon={['fab', 'github']} />
+                            </ContentItemInfo>
+                            <ContentItemBody>
+                                https://github.com/jurajpiar/jurajpiar
+                            </ContentItemBody>
+                        </ContentItem>
+                    </a>
                 </ContentList>
             </ContactPage>
         )
