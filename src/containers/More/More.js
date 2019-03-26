@@ -15,7 +15,9 @@ export class More extends Component {
     render() {
         return (
             <MorePage>
-                <h1 >More</h1>
+                {
+                    // <h1 >More</h1>
+                }
                 <ContentList>
                     <a href="mailto:juraj.piar@icloud.com">
                         <ContentItem className='MoreListItem'>
