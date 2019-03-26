@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from '../../../../components/Page/Page';
 
-const ContactPage = (props) => {
+const MorePage = (props) => {
     return (
         <Page
             center='center'>
@@ -12,4 +12,4 @@ const ContactPage = (props) => {
     )
 }
 
-export default ContactPage
+export default MorePage

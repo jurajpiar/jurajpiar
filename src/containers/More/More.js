@@ -1,24 +1,24 @@
 import React, { Component } from 'react'
-import ContactPage from './components/ContactPage/ContactPage';
+import MorePage from './components/MorePage/MorePage';
 import ContentItem from '../../components/ContentItem/ContentItem';
 import ContentList from '../../components/ContentList/ContentList';
 import ContentItemInfo from '../../components/ContentItemInfo/ContentItemInfo';
 import ContentItemBody from '../../components/ContentItemBody/ContentItemBody';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import './Contact.scss';
+import './More.scss';
 import ContentItemHeader from '../../components/ContentItemHeader/ContentItemHeader';
 
 
 
-export class Contact extends Component {
+export class More extends Component {
     render() {
         return (
-            <ContactPage>
-                <h1 >Contact</h1>
+            <MorePage>
+                <h1 >More</h1>
                 <ContentList>
                     <a href="mailto:juraj.piar@icloud.com">
-                        <ContentItem className='ContactListItem'>
+                        <ContentItem className='MoreListItem'>
                             <ContentItemInfo>
                                 <FontAwesomeIcon icon='envelope' />
                             </ContentItemInfo>
@@ -44,9 +44,9 @@ export class Contact extends Component {
                         </ContentItem>
                     </a>
                 </ContentList>
-            </ContactPage>
+            </MorePage>
         )
     }
 }
 
-export default Contact
+export default More

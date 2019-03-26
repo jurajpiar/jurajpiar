@@ -11,7 +11,7 @@ import {
   Education,
   Career,
   Skills,
-  Contact
+  More
 } from './containers';
 
 library.add(
@@ -44,7 +44,7 @@ function Main() {
         <Route path="/education" component={Education} />
         <Route path="/career" component={Career} />
         <Route path="/skills" component={Skills} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/more" component={More} />
       </Switch>
     </main>
   )

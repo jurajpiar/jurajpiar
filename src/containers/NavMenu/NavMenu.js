@@ -30,7 +30,7 @@ export default class NavMenu extends Component {
                             // </li>
                         }
                         <li>
-                            <Link to='/contact'>Contact</Link>
+                            <Link to='/more'>More</Link>
                         </li>
                     </ul>
                 </div>
