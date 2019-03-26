@@ -19,7 +19,7 @@ export default class Education extends Component {
                         <ContentItem>
                             <EducationItemHeader
                                 organisation='University of the West of England'
-                                programme='Computer Science' />
+                                programme='BSc. Computer Science' />
                             <EducationItemInfo
                                 location='Bristol, UK'
                                 date='2014-2018'
