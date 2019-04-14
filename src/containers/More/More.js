@@ -18,7 +18,7 @@ export class More extends Component {
                 {
                     // <h1 >More</h1>
                 }
-                <ContentList>
+                <ContentList className="MoreContentList">
                     <a href="mailto:juraj.piar@icloud.com">
                         <ContentItem className='MoreListItem'>
                             <ContentItemInfo>
@@ -45,8 +45,32 @@ export class More extends Component {
                             </ContentItemBody>
                         </ContentItem>
                     </a>
+                    <ContentItem>
+                        <ContentItemInfo>
+                            <FontAwesomeIcon icon='envelope' />
+                        </ContentItemInfo>
+                        <ContentItemBody>
+                            <form name="contact" netlify>
+                                <ContentItemInfo>Name</ContentItemInfo>
+                                <ContentItemBody>
+                                    <input type="text" name="name" />
+                                </ContentItemBody>
+                                <ContentItemInfo>Email</ContentItemInfo>
+                                <ContentItemBody>
+                                    <input type="email" name="email" />
+                                </ContentItemBody>
+                                <ContentItemInfo>Message</ContentItemInfo>
+                                <ContentItemBody>
+                                    <textarea name='message'></textarea>
+                                </ContentItemBody>
+                                <p>
+                                    <button type="submit">Send</button>
+                                </p>
+                            </form>
+                        </ContentItemBody>
+                    </ContentItem>
                 </ContentList>
-            </MorePage>
+            </MorePage >
         )
     }
 }

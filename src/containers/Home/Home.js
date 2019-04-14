@@ -45,10 +45,10 @@ export default class Me extends Component {
                                 <linearGradient id="blackGrad1">
                                     <stop
                                         offset="5%"
-                                        stop-color="#000"
-                                        stop-opacity="0">
+                                        stopColor="#000"
+                                        stopOpacity="0">
                                     </stop>
-                                    <stop offset="95%" stop-color="#000"></stop>
+                                    <stop offset="95%" stopColor="#000"></stop>
                                 </linearGradient>
                             </defs>
                             <g>
