@@ -7,7 +7,7 @@ import ContentItemBody from '../../components/ContentItemBody/ContentItemBody';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './More.scss';
-import ContentItemHeader from '../../components/ContentItemHeader/ContentItemHeader';
+// import ContentItemHeader from '../../components/ContentItemHeader/ContentItemHeader';
 
 
 
@@ -19,15 +19,6 @@ export class More extends Component {
                     // <h1 >More</h1>
                 }
                 <ContentList className="MoreContentList">
-                    <a href="mailto:juraj.piar@icloud.com">
-                        <ContentItem className='MoreListItem'>
-                            <ContentItemInfo>
-                                <FontAwesomeIcon icon='envelope' />
-                            </ContentItemInfo>
-                            <ContentItemBody>juraj.piar@icloud.com
-                            </ContentItemBody>
-                        </ContentItem>
-                    </a>
                     <a href="https://www.linkedin.com/in/juraj-p-00833412" target="_blank" rel="noopener noreferrer" >
                         <ContentItem>
                             <ContentItemInfo>

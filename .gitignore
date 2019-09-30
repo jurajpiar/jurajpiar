@@ -24,3 +24,5 @@ yarn-error.log*
 
 /svgs
 .vscode/
+
+yarn.lock

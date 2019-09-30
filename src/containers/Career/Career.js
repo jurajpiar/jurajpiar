@@ -9,6 +9,12 @@ import CareerItemInfo from './components/CareerItemInfo/CareerItemInfo';
 
 export default class Career extends Component {
 
+    getDateDiff = (dateFrom, dateTo) => {
+        const yearsDiff = dateTo.getFullYear() - dateFrom.getFullYear();
+        const monthsDiff = dateTo.getMonth() - dateFrom.getMonth();
+        return yearsDiff * 12 + monthsDiff;
+    }
+
     render() {
         return (
             <PageCareer className='Career'>
@@ -17,12 +23,37 @@ export default class Career extends Component {
                     <ContentList>
                         <ContentItem>
                             <CareerItemHeader
+                                companyName='Swoop Application Ltd.'
+                                jobTitle='Senior Software Developer'
+                            />
+                            <CareerItemInfo
+                                location='Truro, UK'
+                                date={`2019-Present (${this.getDateDiff(new Date(2019, 4, 9), new Date())}mo)`}
+                            />
+                            <ContentItemBody>
+                                <p><b>Colateral</b></p>
+                                <ul className='contentItemBodyList'>
+                                    <li>
+                                        Full-stack JavaScript development of the core business software.
+                                    </li>
+                                    <li>
+                                        Research and Development of future business solutions, features and optimisations.
+                                    </li>
+                                    <li>
+                                        Providing support to more junior developers.
+                                    </li>
+                                </ul>
+                            </ContentItemBody>
+                        </ContentItem>
+
+                        <ContentItem>
+                            <CareerItemHeader
                                 companyName='Buzz Interactive Ltd.'
                                 jobTitle='Software Developer'
                             />
                             <CareerItemInfo
                                 location='Newquay, UK'
-                                date='2018-Present (10mo)'
+                                date={`2018-2019 (${this.getDateDiff(new Date(2018, 6, 9), new Date(2019, 4, 9))}mo)`}
                             />
                             <ContentItemBody>
                                 <p><b>Ménière’s monitor</b> - c#.net Xamarin project extending existing iOS and droid app as well as orchardCMS-based web app.</p>
@@ -38,7 +69,7 @@ export default class Career extends Component {
                             />
                             <CareerItemInfo
                                 location='Geneva, CH'
-                                date='2016-2017 (12mo)'
+                                date={`2016-2017 (${this.getDateDiff(new Date(2016, 8, 1), new Date(2017, 8, 1))}mo)`}
                             />
                             <ContentItemBody>
                                 <p><b>360° Panorama</b></p>
@@ -81,7 +112,7 @@ Applications (VBA)
                             />
                             <CareerItemInfo
                                 location='Bristol, UK'
-                                date='2017-2018 (9mo)'
+                                date={`2017-2018 (${this.getDateDiff(new Date(2017, 11), new Date(2018, 8))}mo)`}
                             />
                             <ContentItemBody>
                                 <p>Providing ad-hoc software support and core system maintenance (JavaSE8 and Python)</p>
@@ -93,7 +124,7 @@ Applications (VBA)
                                 jobTitle='Software Engineer (Contractor)'
                             />
                             <CareerItemInfo
-                                date='2015-2016 (10mo)'
+                                date={`2016-2017 (${this.getDateDiff(new Date(2016, 8), new Date(2017, 6))}mo)`}
                             />
                             <ContentItemBody>
                                 <p>Further development and maintenance of the core software system</p>
@@ -106,7 +137,7 @@ Applications (VBA)
                                 jobTitle='Software Engineer (Summer Intern)'
                             />
                             <CareerItemInfo
-                                date='2015-2015 (4mo)'
+                                date={`2015-2015 (${this.getDateDiff(new Date(2015, 5), new Date(2015, 8))}mo)`}
                             />
                             <ContentItemBody>
                                 <p><b>Arki</b></p>
