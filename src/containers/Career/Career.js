@@ -23,7 +23,7 @@ export default class Career extends Component {
                     <ContentList>
                         <ContentItem>
                             <CareerItemHeader
-                                companyName='Swoop Application Ltd.'
+                                companyName='Colateral.io'
                                 jobTitle='Senior Software Developer'
                             />
                             <CareerItemInfo
@@ -31,7 +31,7 @@ export default class Career extends Component {
                                 date={`2019-Present (${this.getDateDiff(new Date(2019, 4, 9), new Date())}mo)`}
                             />
                             <ContentItemBody>
-                                <p><b>Colateral</b></p>
+                                <p><b>Colateral.io</b></p>
                                 <ul className='contentItemBodyList'>
                                     <li>
                                         Full-stack JavaScript development of the core business software.
