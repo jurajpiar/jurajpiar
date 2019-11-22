@@ -75,7 +75,7 @@ export default class Career extends Component {
                                 <p><b>360° Panorama</b></p>
                                 <ul className='contentItemBodyList'>
                                     <li>
-                                        Prototype and implementation of a virtual tour of the accelerator tunnels using JavaEE8 with Spring framework and JavaScript (ES6, Three.js, WebPack) to reduce radiation exposure
+                                        Implementation of a given virtual tour of the accelerator tunnels (to reduce radiation exposure) prototype using JavaEE8 with Spring framework and JavaScript (ES6, Three.js, WebPack)
                                     </li>
                                     <li>
                                         Communication of requirements from a number of stakeholders (groups, sections and teams within CERN)
